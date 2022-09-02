@@ -7,7 +7,7 @@ networks:
 services:
   fluent-bit:
     container_name: fluent-bit
-    image: fluent-bit:latest
+    image: arturcorreiajunior/fluent-bit:latest
     networks:
       - network
     ports:
@@ -15,7 +15,7 @@ services:
 
   python-tcp:
     container_name: python-tcp
-    image: python-tcp
+    image: arturcorreiajunior/python-tcp:latest
     networks:
       - network
     links:
