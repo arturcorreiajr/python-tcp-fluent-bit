@@ -1,5 +1,5 @@
 # Subindo os servicos
-Criar imagem docker para o serviç python-tcp usando  o projeto https://github.com/arturcorreiajr/python-tcp.git 
+Criar imagem docker para o serviço python-tcp usando  o projeto https://github.com/arturcorreiajr/python-tcp.git 
 
 Criar imagem docker para o fluent-bit 
 ```console 
@@ -12,7 +12,7 @@ Executar docker compose
     docker-compose up -d
 ```
 
-Acessar container da aplicacao python
+Acessar container da aplicaçāo python
 ```console 
     docker exec -it 5e4accc947cf bash
 ```
