@@ -3,35 +3,35 @@ Criar imagem docker para o serviço python-tcp usando  o projeto https://github.
 
 Criar imagem docker para o fluent-bit 
 ```console 
-    docker build -t fluent-bit:latest
+docker build -t fluent-bit:latest
 ```
 
 Informar nome da imagem  do python-tcp  criada no docker-compose 
 Executar docker compose
 ```console 
-    docker-compose up -d
+docker-compose up -d
 ```
 
 Acessar container da aplicaçāo python
 ```console 
-    docker exec -it 5e4accc947cf bash
+docker exec -it 5e4accc947cf bash
 ```
 
 Executar aplicaçāo
 ```console 
-    python3 main.py
+python3 main.py
 ```
 
 Preencher inputs
 ```console 
-    Informar host:
-    Informar port:
-    Mensagem a enviar:
+Informar host:
+Informar port:
+Mensagem a enviar:
 ```
 
 Mensagem a enviar no formato json
 ```console 
-    {"message":"Mensagem"}
+{"message":"Mensagem"}
 ```
 
 
