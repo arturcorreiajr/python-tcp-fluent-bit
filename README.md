@@ -3,7 +3,7 @@ Criar imagem docker para o serviço python-tcp usando  o projeto https://github.
 
 Criar imagem docker para o fluent-bit 
 ```console 
-docker build -t fluent-bit:latest
+docker build -t arturcorreiajunior/fluent-bit:latest
 ```
 
 Informar nome da imagem  do python-tcp  criada no docker-compose 
