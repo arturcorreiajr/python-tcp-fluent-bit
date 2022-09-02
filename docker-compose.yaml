@@ -1,0 +1,30 @@
+version: '3.1'
+
+networks:
+  network:
+    driver: bridge
+
+services:
+  fluent-bit:
+    container_name: fluent-bit
+    image: fluent-bit:latest
+    networks:
+      - network
+    ports:
+      - 8080:5170
+
+  python-tcp:
+    container_name: python-tcp
+    image: python-tcp
+    networks:
+      - network
+    links:
+      - fluent-bit
+    ports:
+      - 8081:80
+
+
+
+
+
+
